@@ -10,17 +10,29 @@
     <h2>Mesin Pencari Faktor Bilangan</h2>
 
     <!-- TODO 1: Tambahkan atribut form ini sehingga data dikirim ke file ini dengan method POST -->
-
-    <form>
+    <form action="index2.php"  method="post">
+        
         Bilangan
         <!-- TODO 2: Tambahkan input berupa text bernama `bilangan` -->
-
-        <button type="submit">Kirim</button>
+        <input type="text" name="bilangan">
+        <button type="submit" name="Send</button>
     </form>
-
+                                    
     <?php
-        //TODO 3 : Lakukang pencarian faktor bilangan disini dan tampilkan 
-
+        //TODO 3 : Lakukan pencarian faktor bilangan disini dan tampilkan 
+    if(isset($_POST['Send){
+        $first=$_POST['bilangan'];
+        $c=1;
+        echo "Faktor $first : ";
+    while($c<$first){
+        if($first%$c==0){
+           $k=$c;
+           echo "$k ";
+            }
+           $c++;
+            }
+           echo "$first";
+            }
     ?>
 </body>
 </html>
