@@ -25,8 +25,6 @@
   echo "Faktor $first : ";
   while($c<$first){
   if($first%$c==0){
-  while($c<$first){
-  if($first%$c==0){
   $k=$c;
   echo "$k ";
   }
@@ -37,4 +35,3 @@
     ?>
 </body>
 </html>
-   
